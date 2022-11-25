@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +10,11 @@
   <title>Kenlin Logistics - Get in Touch</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- icons -->
+  <script src="https://kit.fontawesome.com/913bbdb221.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<!-- @@@@@@@@@@@@ Navigation Section @@@@@@@@@@@@ -->
   <nav>
     <a href="">Kenlin Logo</a>
     <ul>
@@ -22,29 +25,97 @@
     </ul>
   </nav>
 
-  <section class="contact">
-    <h2 style="color: blue; text-align: center;">Get in Touch</h2>
-    <p>Feel Free To Contact Us</p>
-  </section>
+<!-- @@@@@@@@@@@@ Main Section @@@@@@@@@@@@ -->
+<main>
+<!-- @@@@@@@@@@@@ Contact Section @@@@@@@@@@@@ -->
+      <section class="services">
+        <br>
+
+        <h2>Do You Have Any Questions About Us? Write To Us.</h2>
+        <p style="color: gray;">Feel free to drop us a message. We give swift replies</p>
+      <!-- contact form -->
+        <form class="form">
+          <!-- <h4>Get in Touch</h4><br> -->
+          <div class="form-row">
+            <label for="name" class="form-label">Name</label>
+            <input
+            type="text"
+            placeholder="John Doe"
+            id="name"
+            class="form-input"
+          />
+        </div>
+        <div class="form-row">
+          <label for="number" class="form-label">Phone Number</label>
+          <input type="text"placeholder="+254712345678" id="number" class="form-input" />
+        </div>
+        <div class="form-row">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" placeholder="email@example.com" id="email" class="form-input" />
+          <small class="form-alert">please provide value</small>
+        </div>
+        <div class="form-row">
+          <label for="textarea" class="form-label">Leave Us a Message</label>
+          <!-- Default Value -->
+          <textarea class="form-textarea"></textarea>
+        </div>
+        <button type="submit" class="btn btn-block">Contact Us</button>
+      </form>
+
+      <h4>Find Us on The Map</h4>
+      <p>Inserting google map to display current location</p>
+      <!-- google maps -->
+      </section>
+
+<!-- @@@@@@@@@@@@ /Contact Section @@@@@@@@@@@@ -->
+    </main>
 
 
 
-<!-- main -->
+<!-- @@@@@@@@@@@@ /Main Section @@@@@@@@@@@@ -->
 
-
-
-
-  <footer>
+<!-- @@@@@@@@@@@@ Footer Section @@@@@@@@@@@@ -->
+<footer class="footer">
+  <div class="container footer__container">
     <h4>Address</h4>
-    <p>Nairobi, Kenya</p>
-    <p>+254710126736 / +254710638698</p>
-    <p>kenlinlogisticsco.ltd@gmail.com</p>
+    <p><i class="fas fa-map-marker-alt"></i>&nbsp;Nairobi, Kenya</p>
+    <p><i class="fas fa-phone-alt"></i>&nbsp;+254710126736/+254710638698</p>
+    <p><i class="fas fa-envelope"></i>&nbsp;kenlinlogisticsco.ltd@gmail.com</p>
+    <br>
     <h4>Quick Links</h4>
     <p>About Us</p>
     <p>Contact Us</p>
     <p>Our Services</p>
-    &copy; 2022 | Ngala
-  </footer>
+    <br>
+<!-- back to top -->
+    <div>
+      <h4>Get in Touch</h4>
+      <ul class="footer__socials">
+        <li>
+          <a class="social-icon" href="https://www.linkedin.com/in/" data-toggle="tooltip"
+          data-placement="bottom" title="Linked In"><i class="fab fa-linkedin fa-2x"></i></a>
+        </li>
+        <li>
+          <a class="social-icon" href="https://www.instagram.com/glitch_cloud_photography/" data-toggle="tooltip"
+          data-placement="bottom" title="Instagram"><i class="fab fa-instagram-square fa-2x"></i></a>
+        </li>
+        <li>
+          <a class="social-icon" href="https://twitter.com/" data-toggle="tooltip"
+          data-placement="bottom" title="Twitter"><i class="fab fa-twitter-square fa-2x fa-2x"></i></a>
+        </li>
+        <li>
+          <a class="social__icon" href="https://api.whatsapp.com/send?phone=254719603688" data-toggle="tooltip"
+          data-placement="bottom" title="WhatsApp Messenger"><i class="fab fa-whatsapp-square fa-2x"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__copyright">
+      <small>&copy; Kenlin Logistics 2022. All Rights Reserved | Designed by <a href="https://ngala21.github.io/robot/" class="btn">Robot👽</a></small>
+    </div>
+  </div>
+</footer>
+
+<!-- @@@@@@@@@@@@ /Footer Section @@@@@@@@@@@@ -->
 
 <!-- scripts -->
   <script src=""></script>

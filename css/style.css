@@ -1,4 +1,4 @@
-/* @@@@@@@@ styled by ngala21 */
+/* styled by ngala21 */
 /* ------------------ Google Fonts ------------------ */
 @import url();
 
@@ -8,51 +8,133 @@
 ::before{
   margin: 0;
   padding: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
   box-sizing: border-box;
 }
 
 /* ===================== Variables ===================== */
-
+:root {
 /* ------------------ Colors ------------------ */
-/* primary */
+  /* primary */
+  --primary: hsl(250 100% 50%);
+  /* default */
+  --black: #000;
+  --white: #fff;
 
-/* default */
-
-/* ------------------ Fonts ------------------ */
-fonts {
+  /* Fonts */
   --headingFont: helvetica;
   --bodyFont: sans-serif;
   --smallFont: times;
+  /* Media Queries */
+  --container-width-lg: 76%;
+  --container-width-md: 85%;
+  --container-width-sm: 94%;
+  /* Other Vars */
+  --transition: all 400ms ease;
 }
-/* ------------------ Media Queries ------------------ */
-
-
-/* ------------------ Other Vars ------------------ */
-
+/* ===================== /Variables ===================== */
 
 /* ===================== Utility Classes ===================== */
 body {
-
-}
-
-a {
-
+  font-family: var(--bodyFont);
 }
 
 img {
-
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  margin-bottom: 0.7rem;
+  border-radius: 1.5rem;
 }
 
 section {
-  min-height: 90vh;
+  min-height: 70vh;
   padding: 1rem 2rem;
   margin: 1rem;
 }
 
-/* ------------------ Buttons ------------------ */
+section h2 {
+  text-align: center;
+  color: var(--primary);
+}
 
-/* ------------------ Forms ------------------ */
+/* Buttons */
+.btn {
+  cursor: pointer;
+  /* color: blue; */
+  /* background: var(--primary-500); */
+  background: blue;
+  border: transparent;
+  border-radius: var(--borderRadius);
+  letter-spacing: var(--letterSpacing);
+  padding: 0.375rem 0.75rem;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  text-transform: capitalize;
+  display: inline-block;
+}
+.btn:hover {
+  background: white;
+  box-shadow: var(--shadow-3);
+}
+.btn-hipster {
+  color: var(--primary-500);
+  background: var(--primary-200);
+}
+.btn-hipster:hover {
+  color: var(--primary-200);
+  background: var(--primary-700);
+}
+.btn-block {
+  width: 100%;
+}
 
+/* Forms */
+/* form */
+
+.form {
+  width: 90vw;
+  max-width: var(--fixed-width);
+  background: whitesmoke;
+  border-radius: var(--borderRadius);
+  /* box-shadow: var(--shadow-2); */
+  padding: 2rem 2.5rem;
+  margin: 3rem auto;
+}
+.form-label {
+  display: block;
+  font-size: var(--small-text);
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+}
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--borderRadius);
+  background: gray;
+  border: 1px solid var(--grey-200);
+}
+
+.form-row {
+  margin-bottom: 1rem;
+}
+
+.form-textarea {
+  height: 7rem;
+}
+::placeholder {
+  font-family: inherit;
+  color: var(--grey-400);
+}
+.form-alert {
+  color: var(--red-dark);
+  letter-spacing: var(--letterSpacing);
+  text-transform: capitalize;
+}
 /* =================== Header Section =================== */
 nav {
   padding: 1rem 2rem;
@@ -76,6 +158,11 @@ Index
 ==================
 */
 
+.our__clients {
+  height: 20vh;
+  background: hsl(250 80% 50%);
+  border-bottom: 1px solid red;
+}
 
 /*
 ==================
