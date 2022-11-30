@@ -16,7 +16,7 @@
 
 /* ===================== Variables ===================== */
 :root {
-/* ------------------ Colors ------------------ */
+  /* Colors */
   /* primary */
   --primary: hsl(250 100% 50%);
   /* default */
@@ -39,6 +39,7 @@
 /* ===================== Utility Classes ===================== */
 body {
   font-family: var(--bodyFont);
+  line-height: 1.6;
 }
 
 img {
@@ -51,8 +52,7 @@ img {
 
 section {
   min-height: 70vh;
-  padding: 1rem 2rem;
-  margin: 1rem;
+  /* margin: 1rem; */
 }
 
 section h2 {
@@ -60,12 +60,19 @@ section h2 {
   color: var(--primary);
 }
 
+.container {
+  padding: 0 1em;
+  width: 100%;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
 /* Buttons */
 .btn {
   cursor: pointer;
   /* color: blue; */
   /* background: var(--primary-500); */
-  background: blue;
+  margin: 0.375rem 0.75rem;
   border: transparent;
   border-radius: var(--borderRadius);
   letter-spacing: var(--letterSpacing);
@@ -75,9 +82,16 @@ section h2 {
   text-transform: capitalize;
   display: inline-block;
 }
-.btn:hover {
+
+.btn-made {
+  border: 2px solid red;
+  color: red;
+  border-radius: 0.375rem 0.75rem;
+}
+
+.btn-made:hover {
   background: white;
-  box-shadow: var(--shadow-3);
+  color: black;
 }
 .btn-hipster {
   color: var(--primary-500);
@@ -158,6 +172,14 @@ Index
 ==================
 */
 
+.hero {
+  background-image: url(../assets/detroit.png);
+}
+
+.hero__container {
+  padding-top: 250px;
+}
+
 .our__clients {
   height: 20vh;
   background: hsl(250 80% 50%);
@@ -170,6 +192,9 @@ Footer
 ==================
 */
 
+.footer {
+  background: hsl(250 80% 50%);
+}
 /* =================== Page 2 =================== */
 /*
 ==================
